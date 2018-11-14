@@ -1,16 +1,12 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>{{config('app.name','JinnAppNew')}}</title>
+@extends('layouts.app')
+@section('content')
+<div class="jambotron text-center">
+    <h1>{{$title}}</h1>
+    <p>This is home page.</p>
+    <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login</a>
+        <a class="btn btn-success btn-lg" href="/register" role="button">Register</a></p>
+</div>
+@endsection
     
-    </head>
-    <body>
-        <h1>...Juniper Distillery Home Page...</h1>
-        <p>This is Juniper Distillery web portal.</p>
-        <p>New Changes<p>
         
-    </body>
-</html>
+
