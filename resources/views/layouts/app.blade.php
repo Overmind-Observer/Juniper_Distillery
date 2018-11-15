@@ -8,14 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-    <script>
-        CKEDITOR.replace( 'article-ckeditor' );
-    </script>
-
+   
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -31,8 +24,15 @@
             @include('inc.messages')
             @yield('content') 
         </div> 
-         
-
     </div>
+
+    <!-- Vue Right side of navigation bar, asset => resource folder -->
+    <!-- script -->   
+    <script src="{{ mix('js/app.js') }}" ></script>
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor'  );// id 이다.
+    </script>
+
 </body>
 </html>
