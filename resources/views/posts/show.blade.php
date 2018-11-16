@@ -3,6 +3,9 @@
     <a href="/posts" class="btn btn-default">Go Back</a>
     <h1>{{$post ->title}}</h1>
 
+    <!--show image info -->
+    <img style="width:50%" src="/storage/cover_images/{{$post->cover_image}}">
+    
     <div class="well">
     {{--$post ->body--}}
     {!! $post ->body !!}

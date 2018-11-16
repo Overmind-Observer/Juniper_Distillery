@@ -25,14 +25,16 @@
         <div class="container">
             @include('inc.messages')
             @yield('content') 
-        </div>        
+        </div> 
     </div>
-    <script src="{{ mix('js/app.js') }}"></script>
-        <!-- Scripts -->
-        <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-        <script>
-            CKEDITOR.replace( 'article-ckeditor' );
-        </script>
-        
+
+    <!-- Vue Right side of navigation bar, asset => resource folder -->
+    <!-- script -->   
+    <script src="{{ mix('js/app.js') }}" ></script>
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor'  );// id
+    </script>
+
 </body>
 </html>
