@@ -6,7 +6,6 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name', 'Laravel') }}</title>
    
     <!-- Fonts -->
@@ -31,7 +30,7 @@
     <script src="{{ mix('js/app.js') }}" ></script>
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
-        CKEDITOR.replace( 'article-ckeditor'  );// id 이다.
+        CKEDITOR.replace( 'article-ckeditor'  );// id
     </script>
 
 </body>

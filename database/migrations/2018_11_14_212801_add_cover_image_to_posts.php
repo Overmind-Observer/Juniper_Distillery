@@ -14,7 +14,7 @@ class AddCoverImageToPosts extends Migration
     public function up()
     {
         schema ::table('posts', function($table){
-            $table ->integer('cover_image'); //stirng table for showing name
+            $table ->string('cover_image'); //stirng table for showing name
         });
     }
     /**
