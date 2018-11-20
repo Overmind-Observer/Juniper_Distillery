@@ -169,7 +169,7 @@ class PostsController extends Controller
 
                 if($post-> cover_image !='noimage.jpg'){
                     //delete image
-                    
+                    storage:: delete('public/cover_images/'.$post->cover_image);
                 }
                 $post -> delete();
                 return redirect('/posts') ->with('success','Post Deleted');
