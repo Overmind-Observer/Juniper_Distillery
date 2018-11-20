@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <h1>Create Posts</h1>
+    <h1>Share your experiences here ...</h1>
     <!--'enctype' => 'multipart/form-data' added  for image file uploaded -->
     {!! Form::open(['action' => 'PostsController@store' , 'method' => 'POST','enctype' => 'multipart/form-data']) !!}
     <div class="form-group">
@@ -8,7 +8,7 @@
         {{Form::text('title','', ['class' =>'form-control', 'placeholder' =>'Title' ])}} 
     </div>
     <div class="form-group">
-        {{Form::label('body','Body')}}
+        {{Form::label('body','Description')}}
         {{--Form::textarea('body','', ['class' =>'form-control', 'placeholder' =>'Body Text' ])--}} 
         {{Form::textarea('body','', ['id' => 'article-ckeditor', 'class' =>'form-control', 'placeholder' =>'Body Text' ])}} 
     </div>
