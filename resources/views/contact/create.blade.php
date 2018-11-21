@@ -1,22 +1,39 @@
 @extends('layouts.app')
-@section('content')
-    <h1>Send Email</h1>
-    <!--'enctype' => 'multipart/form-data' added  for image file uploaded -->
-    {!! Form::open(['route' => 'ContactController@store' , 'method' => 'POST','enctype' => 'multipart/form-data']) !!}
-    <div class="form-group">
-        {{Form::label('name','Your Name')}}
-        {{Form::text('name','', ['class' =>'form-control', 'placeholder' =>'Title' ])}} 
+
+@section('jumbotron')
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Contact HackerPair</h1>
+            <h2>Your message will be delivered to our clandestine team</h2>
+        </div>
     </div>
-    <div class="form-group">
-        {{Form::label('email','Body')}}
-        {{--Form::textarea('body','', ['class' =>'form-control', 'placeholder' =>'Body Text' ])--}} 
-        {{Form::textarea('body','', ['id' => 'article-ckeditor', 'class' =>'form-control', 'placeholder' =>'Body Text' ])}} 
+@endsection
+@section('content')
+    <h1>Send Your Inquries here ...</h1>
+    <div class="raw">
+    <div class="col-md-6">
+
+{!! Form::open(['route' => 'contact.store']) !!}
+
+<div class="form-group">
+    {!! Form::label('name', 'Your Name') !!}
+    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
+    {!! Form::label('email', 'Email Address') !!}
+    {!! Form::text('email', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group">
+        {!! Form::label('mobile', 'Mobile Number') !!}
+        {!! Form::text('mobile', null, ['class' => 'form-control']) !!}
     </div>
 
-    <!-- image file uploaded -->
-    <div class="form-group">
-        {{Form::file('cover_image')}}
-    </div>
+<div class="form-group">
+        {!! Form::label('msg', 'Inquiry') !!}
+    {!! Form::textarea('msg', null, ['class' => 'form-control']) !!}
+</div>
 
 {!! Form::submit('Submit', ['class' => 'btn btn-info']) !!}
 
