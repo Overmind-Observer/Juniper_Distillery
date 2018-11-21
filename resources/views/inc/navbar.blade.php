@@ -32,6 +32,11 @@
                       <a class="nav-link disabled" href="/posts/create">Create Blog</a>
                     </li>
                   </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="/contact">Contact Us</a>
+                      </li>
+                    </ul>
                 </ul>
       
                 <!-- Right Side Of Navbar -->
