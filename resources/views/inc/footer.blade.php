@@ -16,7 +16,7 @@
             <div class="video-gallery text-center">
               <a href="#">
                 <div class="iframe-img">
-                  <img src="images/home/iframe1.png" alt="" />
+                  <img src="" alt="" />
                 </div>
                 <div class="overlay-icon">
                   <i class="fa fa-play-circle-o"></i>
@@ -31,7 +31,7 @@
             <div class="video-gallery text-center">
               <a href="#">
                 <div class="iframe-img">
-                  <img src="images/home/iframe2.png" alt="" />
+                  <img src="" alt="" />
                 </div>
                 <div class="overlay-icon">
                   <i class="fa fa-play-circle-o"></i>
@@ -46,7 +46,7 @@
             <div class="video-gallery text-center">
               <a href="#">
                 <div class="iframe-img">
-                  <img src="images/home/iframe3.png" alt="" />
+                  <img src="" alt="" />
                 </div>
                 <div class="overlay-icon">
                   <i class="fa fa-play-circle-o"></i>
@@ -60,7 +60,7 @@
         </div>
         <div class="col-sm-3">
           <div class="address">
-            <img src="images/home/map.png" alt="" />
+            <img src="{{asset('images/home/map.png')}}" alt="" />
             <p>23 Riverview Rd Rangiora</p>
           </div>
         </div>
@@ -147,3 +147,34 @@
   </div>
   
 </footer><!--/Footer-->
+
+    <!-- scroll up-->     
+    <script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
+    <!-- Price range-->   
+    <script src="{{asset('js/price-range.js')}}"></script>
+    <!-- PrettyPhoto-->   
+    <script src="{{asset('js/jquery.prettyPhoto.js')}}"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script> 
+<script type="text/javascript" src="{{asset('js/SmoothScroll.js')}}"></script> 
+<script type="text/javascript" src="{{asset('js/jquery.isotope.js')}}"></script> 
+<script src="{{asset('js/owl.carousel.js')}}"></script> 
+<script src="{{asset('js/jquery.waypoints.min.js')}}"></script> 
+<!-- Custom Javascripts
+    ================================================== --> 
+<script type="{{asset('text/javascript" src="js/main.js')}}"></script> 
+<script src="{{asset('js/wow.min.js')}}"></script> 
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 900
+        });
+    });
+</script> 
+<script>
+new WOW().init();
+</script>

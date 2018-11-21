@@ -20,5 +20,12 @@
 
     {{Form::submit('Submit',['class' =>'btn btn-primary'])}}
     {!! Form::close() !!}
+
+        <!-- Vue Right side of navigation bar, asset => resource folder -->
+        <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace( 'article-ckeditor'  );// id
+        </script>
+        
       
 @endsection
