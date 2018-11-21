@@ -43,7 +43,7 @@
                                         <ul role="menu" class="sub-menu">
                                             <li><a href="/about">About Company</a></li>
                                             <li><a href="/service">Our News</a></li>
-                                            <li><a href="/service">Contact Us</a></li>
+                                            <li><a href="/contact">Contact Us</a></li>
                                           </ul>
                                     </li> 
                                 </ul>

@@ -74,7 +74,7 @@
         <div class="col-sm-2">
           <div class="single-widget">
             <h2>Products</h2>
-            <ul class="nav-stacked nav-pills ">
+            <ul class="nav nav-pills nav-stacked">
               <li><a href="#">Whisky</a></li>
               <li><a href="#">Wine</a></li>
               <li><a href="#">Spirits</a></li>
@@ -98,13 +98,8 @@
           <div class="single-widget">
               <h2>New Arrivals</h2>
               <ul class="nav nav-pills nav-stacked">
-               <li><a href="#">New Product Launching</a></li>
+               <li><a href="#">Product Launching</a></li>
                 <li><a href="#">Tasting Tips</a></li>
-              </ul>
-
-              <h2>Customer Experiences</h2>
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#">Tastring Experiences</a></li>
               </ul>
           </div>
         </div>
@@ -117,6 +112,10 @@
               <li><a href="#">About Company</a></li><br>
               <li><a href="#">Our News</a></li>
               <li><a href="#">Contact Us</a></li>
+            </ul>
+            <h2>Customer Experiences</h2>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">Tastring Experiences</a></li>
             </ul>
           </div>
         </div>

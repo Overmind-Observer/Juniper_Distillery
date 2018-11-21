@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
+
     <h1>Share your experiences here ...</h1>
+    <div class ="raw">
+    <div class="col-md-6">
     <!--'enctype' => 'multipart/form-data' added  for image file uploaded -->
     {!! Form::open(['action' => 'PostsController@store' , 'method' => 'POST','enctype' => 'multipart/form-data']) !!}
     <div class="form-group">
@@ -20,12 +23,13 @@
 
     {{Form::submit('Submit',['class' =>'btn btn-primary'])}}
     {!! Form::close() !!}
+</div>
+</div>
 
         <!-- Vue Right side of navigation bar, asset => resource folder -->
         <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
         <script>
             CKEDITOR.replace( 'article-ckeditor'  );// id
         </script>
-        
-      
+    
 @endsection
