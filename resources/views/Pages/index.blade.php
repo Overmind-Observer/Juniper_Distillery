@@ -1,10 +1,8 @@
 @extends('layouts.app')
 @section('content')
-<div class="jambotron text-center">
-    <h1>{{$title}}</h1>
-    <p>This is home page.</p>
-    <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login</a>
-        <a class="btn btn-success btn-lg" href="/register" role="button">Register</a></p>
+<div class="jambotron">
+    @include('inc.banner')
+    @include('inc.category')
 </div>
 @endsection
     

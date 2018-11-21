@@ -1,13 +1,4 @@
 @extends('layouts.app')
-
-@section('jumbotron')
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Contact HackerPair</h1>
-            <h2>Your message will be delivered to our clandestine team</h2>
-        </div>
-    </div>
-@endsection
 @section('content')
     <h1>Send Your Inquries here ...</h1>
     <div class="raw">
