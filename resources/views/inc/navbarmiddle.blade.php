@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="logo pull-left">
-                    <a href="/"><img src="images/home/logo.png" /></a>
+                    <a href="/"><img src="{{asset('images/home/logo.png')}}" /></a>
                 </div>
             </div>
             <div class="col-sm-8">

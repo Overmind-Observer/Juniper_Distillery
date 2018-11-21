@@ -18,8 +18,8 @@
 
      <!-- script -->   
     <script src="{{ mix('js/app.js') }}" ></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{asset ('js/jquery.js')}}"></script>
+    <script src="{{asset ('js/bootstrap.min.js')}}"></script>
 
     <!-- Favicons
     ================================================== -->
@@ -32,8 +32,8 @@
 <!-- Stylesheet
     ================================================== -->
 <link rel="stylesheet" type="text/css"  href="{{asset('style.css')}}">
-<link href="css/animate.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+<link href="{{asset('css/animate.css')}}" rel="stylesheet">
+<link href="{{asset('css/main.css')}}" rel="stylesheet">
 
 </head>
 <body>
@@ -46,11 +46,5 @@
         </div> 
     </div>
     @include('inc.footer')
-    <!-- Vue Right side of navigation bar, asset => resource folder -->
-    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-    <script>
-        CKEDITOR.replace( 'article-ckeditor'  );// id
-    </script>
-
 </body>
 </html>

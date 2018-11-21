@@ -10,7 +10,6 @@
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
                                         <span class="badge pull-right"><i class="fa fa-plus"></i></span>
-                                        Sportswear
                                     </a>
                                 </h4>
                             </div>
@@ -135,7 +134,7 @@
                     </div><!--/price-range-->
                     
                     <div><!--image-->
-                        <img src="images/home/jinn.png" alt="" />
+                        <img src="{{asset('images/home/jinn.png')}}" alt="" />
                         <br><br>
                     </div><!--/image-->
                 
