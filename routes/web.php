@@ -24,3 +24,7 @@ Route::resource('posts','PostsController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//contact
+Route::get('contact', 'ContactController@create')->name('contact.create');
+Route::post('contact', 'ContactController@store')->name('contact.store');
