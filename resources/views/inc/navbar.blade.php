@@ -22,7 +22,7 @@
                                             <li><a href="#">Spirits</a></li> 
                                         </ul>
                                     </li> 
-                                    <li class="dropdown"><a href="#">Product Recipe<i class="fa fa-angle-down"></i></a>
+                                    <li class="dropdown"><a href="#">Product Recipes<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
                                             <li><a href="/home">Recipes</a></li>
                                             <li><a href="/home">How to make</a></li>
@@ -30,8 +30,8 @@
                                     </li> 
                                     <li class="dropdown"><a href="#">New Arrivals<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
-                                            <li><a href="/welcome">New Product Lunching</a></li>
-                                            <li><a href="/welcome">Tasting Tips</a></li>
+                                            <li><a href="/home">New Product Lunching</a></li>
+                                            <li><a href="/home">Tasting Tips</a></li>
                                         </ul>
                                     </li> 
                                     <li class="dropdown"><a href="#">Cutomer Experiences<i class="fa fa-angle-down"></i></a>
@@ -39,9 +39,9 @@
                                             <li><a href="/posts">Tasting Experiences</a></li>
                                         </ul>
                                     </li> 
-                                    <li class="dropdown"><a href="#">History<i class="fa fa-angle-down"></i></a>
+                                    <li class="dropdown"><a href="#">Company<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
-                                            <li><a href="/about">About Company</a></li>
+                                            <li><a href="/about">History</a></li>
                                             <li><a href="/service">Our News</a></li>
                                             <li><a href="/contact">Contact Us</a></li>
                                           </ul>

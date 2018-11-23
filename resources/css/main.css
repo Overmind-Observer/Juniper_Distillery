@@ -5,6 +5,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -2520,4 +2522,62 @@ h2.title {
   color: #FE980F;
 }
 
+
+/* Basic styles */
+
+.row {
+  text-align: center;
+}
+
+.rate {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input {
+  display: none;
+}
+
+label {
+  float: right;
+  font-size: 0;
+  color: #d9d9d9;
+}
+
+label:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  font-size: 40px;
+}
+
+label:hover,
+label:hover ~ label {
+  color: #fcd000;
+  transition: 0.2s;
+}
+
+input:checked ~ label {
+  color: #ccac00;
+}
+
+input:checked ~ label:hover,
+input:checked ~ label:hover ~ label {
+  color: #fcd000;
+  transition: 0.2s;
+}
+
+
+/* Half-star*/
+
+.star-half {
+  position: relative;
+}
+
+.star-half:before {
+  position: absolute;
+  content: "\f089";
+  padding-right: 0;
+}
 

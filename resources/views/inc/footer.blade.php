@@ -86,7 +86,7 @@
         <div class="col-sm-2">
           <div class="single-widget">
             <h2>Product Recipe</h2>
-            <ul class="nav nav-pills left">
+            <ul class="nav nav-pills nav-stacked">
               <li><a href="#">Recipes</a></li>
               <li><a href="#">How to make</a></li>
             </ul>
@@ -164,7 +164,8 @@
 <script src="{{asset('js/jquery.waypoints.min.js')}}"></script> 
 <!-- Custom Javascripts
     ================================================== --> 
-<script type="{{asset('text/javascript" src="js/main.js')}}"></script> 
+
+    <script type="{{asset('text/javascript" src="js/main.js')}}"></script> 
 <script src="{{asset('js/wow.min.js')}}"></script> 
 <script>
     jQuery(document).ready(function( $ ) {
@@ -177,3 +178,23 @@
 <script>
 new WOW().init();
 </script>
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    var Aspire2Ch = {lat: -43.535037, lng: 172.646573};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: Aspire2Ch});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: Aspire2Ch, map: map});
+  }
+  initMap();
+      </script>
+      <!--Load the API from the specified URL
+      * The async attribute allows the browser to render the page while the API loads
+      * The key parameter will contain your own API key (which is not needed for this tutorial)
+      * The callback parameter executes the initMap() function
+      -->
+

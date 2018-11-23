@@ -26,3 +26,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('contact', 'ContactController@create')->name('contact.create');
 Route::post('contact', 'ContactController@store')->name('contact.store');
+Route::get('/map', 'MapController@index')->name('map');
+
