@@ -1,20 +1,24 @@
-@extends('layouts.app')
-@section('content')
-    <h1>Email Message ...</h1>
+{{-- @extends('layouts.app') --}}
+{{-- @section('content') --}}
+    <html><h1>User's Inquiry ...</h1>
     <div class="raw">
     <div class="col-md-6">
-            Hi,
+            
+        <p>Hi,</p>
 
-            User has sent you a message.
+            <p>User has sent you an Inquiry Message.</p>
+            <P> <h4>Sender Information...</h4></P>
+            <hr style="border-top: 1px dashed black;">
+            <P> <b>Name:</b> {{$name}}</P>
             
-            Name: {{ $contact['name'] }}
-            
-            Email: {{ $contact['email'] }}
+                    <P> <b>Email:</b> {{$email}}</P>
 
-            Mobile: {{ $contact['mobile'] }}
-            
-            Message: {{ $contact['msg'] }}
+                            <P> <b>Mobile:</b> {{$mobile}}</P>
+                            <hr style="border-top: 1px dashed black;">
+                                    <P> <b>Inquiry Message:</b> {{$text }}</P>
+                                    <br>
+                                    <img style="width:35%" src="../images/home/logo.png">
     </div>
-</div>
+</div></html>
       
-@endsection
+{{-- @endsection --}}

@@ -1,19 +1,17 @@
 @extends('layouts.app')
 
-@section('jumbotron')
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Contact HackerPair</h1>
-            <h2>Your message will be delivered to our clandestine team</h2>
-        </div>
-    </div>
-@endsection
 @section('content')
-    <h1>Send Your Inquries here ...</h1>
-    <div class="raw">
-    <div class="col-md-6">
+<h1>Our Location ...</h1>
+        <div style="width: 800px; height: 500px;">
+        <!-- This is the place to display the map -->
+            {!! Mapper::render() !!}
+        </div>
+        <br>
+        <h1>Send Your Inquries here ...</h1>
 
-{!! Form::open(['route' => 'contact.store']) !!}
+    
+               <div class="col-md-8 col-sm-12">
+{!! Form::open(['action'=> 'ContactController@store', 'method'=>'POST', 'enctype' => 'multipart/form-data','route' => 'contact.store']) !!}
 
 <div class="form-group">
     {!! Form::label('name', 'Your Name') !!}
@@ -38,7 +36,6 @@
 {!! Form::submit('Submit', ['class' => 'btn btn-info']) !!}
 
 {!! Form::close() !!}
-</div>
 </div>
       
 @endsection

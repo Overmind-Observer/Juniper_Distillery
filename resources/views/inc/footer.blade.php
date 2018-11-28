@@ -86,7 +86,11 @@
         <div class="col-sm-2">
           <div class="single-widget">
             <h2>Product Recipe</h2>
+<<<<<<< HEAD
             <ul class="nav-pill" style="padding:0;list-style:none;"> 
+=======
+            <ul class="nav nav-pills nav-stacked">
+>>>>>>> efc101ba33679f28a799048c2d41ca40e6a9bd5a
               <li><a href="#">Recipes</a></li>
               <li><a href="#">How to make</a></li>
             </ul>
@@ -151,6 +155,7 @@
 </footer><!--/Footer-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<<<<<<< HEAD
     <script src="{{asset('js/jquery.js')}}"></script>
 	<script src="{{asset('js/bootstrap.min.js')}}"></script>
 	<script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
@@ -167,3 +172,48 @@ $(window).scroll(function(){
     }
 });
 </script> 
+=======
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script> 
+<script type="text/javascript" src="{{asset('js/SmoothScroll.js')}}"></script> 
+<script type="text/javascript" src="{{asset('js/jquery.isotope.js')}}"></script> 
+<script src="{{asset('js/owl.carousel.js')}}"></script> 
+<script src="{{asset('js/jquery.waypoints.min.js')}}"></script> 
+<!-- Custom Javascripts
+    ================================================== --> 
+
+    <script type="{{asset('text/javascript" src="js/main.js')}}"></script> 
+<script src="{{asset('js/wow.min.js')}}"></script> 
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 900
+        });
+    });
+</script> 
+<script>
+new WOW().init();
+</script>
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    var Aspire2Ch = {lat: -43.535037, lng: 172.646573};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: Aspire2Ch});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: Aspire2Ch, map: map});
+  }
+  initMap();
+      </script>
+      <!--Load the API from the specified URL
+      * The async attribute allows the browser to render the page while the API loads
+      * The key parameter will contain your own API key (which is not needed for this tutorial)
+      * The callback parameter executes the initMap() function
+      -->
+
+>>>>>>> efc101ba33679f28a799048c2d41ca40e6a9bd5a
