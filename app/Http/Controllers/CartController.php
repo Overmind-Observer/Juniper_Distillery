@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
 
 class CartController extends Controller
 {
@@ -13,7 +14,9 @@ class CartController extends Controller
      */
     public function index()
     {
-        //
+        $mightAlsolike =  Product::inRandomOrder()->take(4)->get();
+
+        return view('Pages.cart')->with('mightAlsoLike',$mightAlsolike);
     }
 
     /**

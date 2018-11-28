@@ -2,11 +2,9 @@
 @section('content')
 
     <h1>Share your experiences here ...</h1>
-<<<<<<< HEAD
+
     <div class="raw">
-=======
-    <div class ="raw">
->>>>>>> efc101ba33679f28a799048c2d41ca40e6a9bd5a
+
     <div class="col-md-6">
     <!--'enctype' => 'multipart/form-data' added  for image file uploaded -->
     {!! Form::open(['action' => 'PostsController@store' , 'method' => 'POST','enctype' => 'multipart/form-data']) !!}

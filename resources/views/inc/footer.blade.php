@@ -86,11 +86,7 @@
         <div class="col-sm-2">
           <div class="single-widget">
             <h2>Product Recipe</h2>
-<<<<<<< HEAD
             <ul class="nav-pill" style="padding:0;list-style:none;"> 
-=======
-            <ul class="nav nav-pills nav-stacked">
->>>>>>> efc101ba33679f28a799048c2d41ca40e6a9bd5a
               <li><a href="#">Recipes</a></li>
               <li><a href="#">How to make</a></li>
             </ul>

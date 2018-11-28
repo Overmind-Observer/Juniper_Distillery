@@ -213,14 +213,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
-<<<<<<< HEAD
         'Html' => Collective\Html\HtmlFacade::class,
         'Mapper' => Cornford\Googlmapper\Facades\MapperFacade::class,
-=======
-        'Html' => Collective\Html\HtmlFacade::class, 
-        'Mapper'=> Cornford\Googlmapper\Facades\MapperFacade::class,   
-
->>>>>>> efc101ba33679f28a799048c2d41ca40e6a9bd5a
     ],
 
 ];
