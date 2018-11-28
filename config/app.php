@@ -152,6 +152,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Cornford\Googlmapper\MapperServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -211,8 +212,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
-        'Html' => Collective\Html\HtmlFacade::class,    
-
+        'Html' => Collective\Html\HtmlFacade::class,
+        'Mapper' => Cornford\Googlmapper\Facades\MapperFacade::class,
     ],
 
 ];

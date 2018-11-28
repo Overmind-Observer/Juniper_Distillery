@@ -50,7 +50,6 @@ License URI: LICENSE
 1.0 Normalize
 --------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900|Lato:300,400|Crimson+Text:400,400i,600');
 /*
 fonts used
 font-family: 'Crimson Text', serif;
@@ -236,7 +235,7 @@ p.copyright {
 	border-bottom: 2px transparent solid;
 }
 #top-menu.navbar-default .navbar-nav li:hover {
-	border-bottom: 2px #51dde97 solid;
+	border-bottom: 2px #51dde9 solid;
 	transition: all 0.5s;
 	background:#51dde9;
 	color:#fff;
@@ -259,7 +258,6 @@ p.copyright {
 	content: "\f105";
 	display: inline-block;
 	font-family: 'FontAwesome';
-	float: right;
 	margin-left: 10px;
 }
 #top-menu.navbar-default .navbar-nav ul li:first-child {
@@ -298,8 +296,6 @@ p.copyright {
 	float: right;
 	margin-left: 15px;
 }
-#top-menu.navbar-default .navbar-nav ul a:hover {
-}
 #top-menu.navbar-default .navbar-nav ul ul:before {
 	display: none;
 }
@@ -309,8 +305,6 @@ p.copyright {
 }
 #top-menu.navbar-default .navbar-nav li:hover > ul {
 	display: block
-}
-#top-menu.navbar-default .navbar-nav > li a.active-on {
 }
 #top-menu.navbar-default .navbar-nav > li a:hover {
 	transition: all 0.5s;
@@ -2100,7 +2094,7 @@ aside li a:hover {
 	font-weight: bold;
 	color: #bbbbbb;
 }
-. usrdt {
+.usrdt {
  margin-top: -90px;
 }
 .usrdt p {

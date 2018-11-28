@@ -74,8 +74,8 @@
         <div class="col-sm-2">
           <div class="single-widget">
             <h2>Products</h2>
-            <ul class="nav nav-pills nav-stacked">
-              <li><a href="#">Whisky</a></li>
+            <ul class="nav-pill" style="padding:0;list-style:none;"> 
+              <li><a href="#" >Whisky</a></li>
               <li><a href="#">Wine</a></li>
               <li><a href="#">Spirits</a></li>
             </ul>
@@ -86,7 +86,7 @@
         <div class="col-sm-2">
           <div class="single-widget">
             <h2>Product Recipe</h2>
-            <ul class="nav nav-pills left">
+            <ul class="nav-pill" style="padding:0;list-style:none;"> 
               <li><a href="#">Recipes</a></li>
               <li><a href="#">How to make</a></li>
             </ul>
@@ -97,9 +97,15 @@
         <div class="col-sm-2">
           <div class="single-widget">
               <h2>New Arrivals</h2>
-              <ul class="nav nav-pills nav-stacked">
-               <li><a href="#">Product Launching</a></li>
+              <ul class="nav-pill" style="padding:0;list-style:none;"> 
+                <li><a href="#">Product Launching</a></li>
                 <li><a href="#">Tasting Tips</a></li>
+              </ul>
+
+              <br>
+              <h2>Customer</h2>
+              <ul class="nav-pill" style="padding:0;list-style:none;">
+                  <li><a href="#">Tastring Experiences</a></li>
               </ul>
           </div>
         </div>
@@ -108,15 +114,12 @@
         <div class="col-sm-2">
           <div class="single-widget">
             <h2>History</h2>
-            <ul class="nav nav-pills nav-stacked">
+            <ul class="nav-pills" style="padding:0;list-style:none;">
               <li><a href="#">About Company</a></li><br>
               <li><a href="#">Our News</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
-            <h2>Customer Experiences</h2>
-            <ul class="nav nav-pills nav-stacked">
-                <li><a href="#">Tastring Experiences</a></li>
-            </ul>
+
           </div>
         </div>
 
@@ -147,33 +150,20 @@
   
 </footer><!--/Footer-->
 
-    <!-- scroll up-->     
-    <script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
-    <!-- Price range-->   
-    <script src="{{asset('js/price-range.js')}}"></script>
-    <!-- PrettyPhoto-->   
-    <script src="{{asset('js/jquery.prettyPhoto.js')}}"></script>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script type="text/javascript" src="{{asset('js/bootstrap.js')}}"></script> 
-<script type="text/javascript" src="{{asset('js/SmoothScroll.js')}}"></script> 
-<script type="text/javascript" src="{{asset('js/jquery.isotope.js')}}"></script> 
-<script src="{{asset('js/owl.carousel.js')}}"></script> 
-<script src="{{asset('js/jquery.waypoints.min.js')}}"></script> 
-<!-- Custom Javascripts
-    ================================================== --> 
-<script type="{{asset('text/javascript" src="js/main.js')}}"></script> 
-<script src="{{asset('js/wow.min.js')}}"></script> 
+    <script src="{{asset('js/jquery.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('js/jquery.scrollUp.min.js')}}"></script>
+	<script src="{{asset('js/price-range.js')}}"></script>
+    <script src="{{asset('js/jquery.prettyPhoto.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 <script>
-    jQuery(document).ready(function( $ ) {
-        $('.counter').counterUp({
-            delay: 10,
-            time: 900
-        });
-    });
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 300) {
+        $('nav').addClass('fixed-header');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+    }
+});
 </script> 
-<script>
-new WOW().init();
-</script>

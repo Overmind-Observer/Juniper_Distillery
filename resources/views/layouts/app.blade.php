@@ -9,38 +9,47 @@
     <title>{{ config('app.name', 'JinnApp') }}</title>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100o" rel="stylesheet" type="text/css">    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700" rel="stylesheet" type="text/css">    <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
-    
-    <!-- Styles -->
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    <style type="text/css">
+    @font-face{
+    font-family:'FontAwesome';
+    src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+    url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+    url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+    url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+    url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;
+    font-style:normal
+}
+    </style>
 
-     <!-- script -->   
-    <script src="{{ mix('js/app.js') }}" ></script>
-    <script src="{{asset ('js/jquery.js')}}"></script>
-    <script src="{{asset ('js/bootstrap.min.js')}}"></script>
+    <!-- icon -->
+    <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
 
-    <!-- Favicons
-    ================================================== -->
-<link rel="shortcut icon" href="#" type="image/x-icon">
+<!-- Stylesheet -->
+            <link href="{{asset('css/prettyPhoto.css')}}" rel="stylesheet">
+<link href="{{asset('css/price-range.css')}}" rel="stylesheet">
+<link href="{{asset('css/animate.css')}}" rel="stylesheet">
+   <link href="{{asset('css/main.css')}}" rel="stylesheet">
+<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="{{asset('images/ico/favicon.ico')}}">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset('images/ico/apple-touch-icon-144-precomposed.png')}}">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{asset('images/ico/apple-touch-icon-114-precomposed.png')}}">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{asset('images/ico/apple-touch-icon-72-precomposed.png')}}">
+<link rel="apple-touch-icon-precomposed" href="{{asset('images/ico/apple-touch-icon-57-precomposed.png')}}">
 
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="{{asset('css/bootstrap.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('css/font-awesome.css')}}">
+<link rel="stylesheet" type="text/css"  href="{{asset('css/bootstrap.min.css')}}">
 
-<!-- Stylesheet
-    ================================================== -->
-<link rel="stylesheet" type="text/css"  href="{{asset('style.css')}}">
-<link href="{{asset('css/animate.css')}}" rel="stylesheet">
-<link href="{{asset('css/main.css')}}" rel="stylesheet">
+
 
 </head>
 <body>
     <div id="app">
         
         @include('inc.navbar')
-        <div class="container">
+     <div class="container">
             @include('inc.messages')
             @yield('content') 
         </div> 

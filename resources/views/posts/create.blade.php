@@ -2,11 +2,7 @@
 @section('content')
 
     <h1>Share your experiences here ...</h1>
-<<<<<<< HEAD
-    <div class ="raw">
-=======
     <div class="raw">
->>>>>>> 49f31476c74a351c4340827e57f76df321c2ad40
     <div class="col-md-6">
     <!--'enctype' => 'multipart/form-data' added  for image file uploaded -->
     {!! Form::open(['action' => 'PostsController@store' , 'method' => 'POST','enctype' => 'multipart/form-data']) !!}
@@ -27,7 +23,6 @@
 
     {{Form::submit('Submit',['class' =>'btn btn-primary'])}}
     {!! Form::close() !!}
-<<<<<<< HEAD
 </div>
 </div>
 
@@ -37,9 +32,4 @@
             CKEDITOR.replace( 'article-ckeditor'  );// id
         </script>
     
-=======
-    </div>
-</div>
-      
->>>>>>> 49f31476c74a351c4340827e57f76df321c2ad40
 @endsection
