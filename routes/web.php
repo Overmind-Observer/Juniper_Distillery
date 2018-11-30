@@ -21,6 +21,7 @@ Route::get('/about', 'PageController@about');
 Route::get('/service', 'PageController@service');
 
 Route::resource('posts','PostsController');
+Route::resource('products','ProductController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

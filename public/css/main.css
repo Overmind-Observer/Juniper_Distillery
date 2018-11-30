@@ -5,10 +5,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
-
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 body {
   font-family: 'Roboto', sans-serif;
-  background:;
+  /* background:; */
   position: relative;
   font-weight:400px;
 }
@@ -899,7 +899,7 @@ h2.title {
   transition: height 500ms ease 0s;
   width: 100%;
   display: block;
-  opacity:;
+  /* opacity:; */
 }
 
 .single-products:hover .product-overlay {
@@ -2518,6 +2518,65 @@ h2.title {
 
 .contact-info .social-networks ul li a:hover{
   color: #FE980F;
+}
+
+/* Basic styles */
+
+.row {
+  text-align: center;
+}
+
+.rate {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  /* background-color: black !important; */
+}
+
+fieldset.rate input {
+  display: none;
+}
+
+fieldset.rate label {
+  float: right;
+  font-size: 0;
+  color: #d9d9d9;
+}
+
+fieldset.rate label:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  font-size: 40px;
+}
+
+fieldset.rate label:hover,
+fieldset.rate label:hover ~ label {
+  color: #fcd000;
+  transition: 0.2s;
+}
+
+fieldset.rate input:checked ~ label {
+  color: #ccac00;
+}
+
+fieldset.rate input:checked ~ label:hover,
+fieldset.rate input:checked ~ label:hover ~ label {
+  color: #fcd000;
+  transition: 0.2s;
+}
+
+
+/* Half-star*/
+
+.star-half {
+  position: relative;
+}
+
+.star-half:before {
+  position: absolute;
+  content: "\f089";
+  padding-right: 0;
 }
 
 
