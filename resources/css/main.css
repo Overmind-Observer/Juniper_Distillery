@@ -2,15 +2,8 @@
 /*************************
 *******Typography******
 **************************/
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
-@import url(http://fonts.googleapis.com/css?family=Abel);
-
-
-
 body {
   font-family: 'Roboto', sans-serif;
-  /* background:; */
   position: relative;
   font-weight:400px;
 }
@@ -901,7 +894,10 @@ h2.title {
   transition: height 500ms ease 0s;
   width: 100%;
   display: block;
+<<<<<<< HEAD
   /* opacity:; */
+=======
+>>>>>>> cfea965b29e42ea2e1f316a3f91d010fe878f5b4
 }
 
 .single-products:hover .product-overlay {

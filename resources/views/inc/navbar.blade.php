@@ -1,9 +1,6 @@
 @include('inc.navbarheader')
 @include('inc.navbarmiddle')
 
-      <nav class="navbar navbar-expand-md navbar-light navbar-laravel ">
-        <div class="container">
-
             <div class="header-bottom"><!--header-bottom-->
                 <div class="container">
                     <div class="row">
@@ -17,9 +14,9 @@
                                 <ul class="nav navbar-nav collapse navbar-collapse">
                                     <li class="dropdown"><a href="#">Products<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
-                                            <li><a href="#">Whisky</a></li>
-                                            <li><a href="#">Wine</a></li> 
-                                            <li><a href="#">Spirits</a></li> 
+                                            <li><a href="/shop">Whisky</a></li>
+                                            <li><a href="/shop">Wine</a></li> 
+                                            <li><a href="/shop">Spirits</a></li> 
                                         </ul>
                                     </li> 
                                     <li class="dropdown"><a href="#">Product Recipes<i class="fa fa-angle-down"></i></a>
@@ -57,6 +54,4 @@
                     </div>
                 </div>
             </div><!--/header-bottom-->
-  
-        </div>
-    </nav>
+        </header>

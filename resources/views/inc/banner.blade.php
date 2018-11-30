@@ -18,9 +18,9 @@
                               <button type="button" class="btn btn-default get">Get it now</button>
                             </div>
                             <div class="col-sm-6">
-                              <img src="images/home/whisky.jpg" class="girl img-responsive" alt="" />
+                              <img src="images/banner/whisky.jpg" class="girl img-responsive" alt="" />
                               <br>
-                              <img src="images/home/pricing.png"  class="pricing" alt="" />
+                              <img src="images/banner/pricing.png"  class="pricing" alt="" />
                             </div>
                           </div>
                           <div class="item">
@@ -32,20 +32,20 @@
                               <button type="button" class="btn btn-default get">Get it now</button>
                             </div>
                             <div class="col-sm-6">
-                              <img src="images/home/wine.jpg" class="girl img-responsive" alt="" />
+                              <img src="images/banner/wine.jpg" class="girl img-responsive" alt="" />
                               <img src=""  class="pricing" alt="" />
                             </div>
                           </div>
                           
                           <div class="item">
                             <div class="col-sm-6">
-                                <h1><span>J</span>uniper <span>D</span>istillery</h1>
+                                <h1 ><span>J</span>uniper <span>D</span>istillery</h1>
                               <h2>Liguor & Spirits</h2>
                               <p>This is an alcoholic drink produced by distillation of grains, fruit, or vegetables that have already gone through alcoholic fermentation.  </p>
                               <button type="button" class="btn btn-default get">Get it now</button>
                             </div>
                             <div class="col-sm-6">
-                              <img src="images/home/spirits.jpg" class="girl img-responsive" alt="" />
+                              <img src="images/banner/spirits.jpg" class="girl img-responsive" alt="" />
                               <img src="" class="pricing" alt="" />
                             </div>
                           </div>

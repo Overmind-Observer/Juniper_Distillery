@@ -40,4 +40,7 @@
         </p>
         <br>
         <img style="width:35%" src="../images/pic.jpg">
+        <div style="width: 1000px; height: 500px;">
+                {!! Mapper::render() !!}
+    </div>
 @endsection

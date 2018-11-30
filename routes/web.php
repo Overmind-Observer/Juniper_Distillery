@@ -1,5 +1,7 @@
 <?php
 
+use FarhanWazir\GoogleMaps\GMaps;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +22,11 @@ Route::get('/', 'PageController@index');
 Route::get('/about', 'PageController@about');
 Route::get('/service', 'PageController@service');
 
+Route::get('/shop', 'ShopController@index')->name('shop.index');
+Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
+
+Route::get('/cart', 'CartController@index')->name('cart.index');
+
 Route::resource('posts','PostsController');
 Route::resource('products','ProductController');
 Auth::routes();
@@ -27,5 +34,3 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('contact', 'ContactController@create')->name('contact.create');
 Route::post('contact', 'ContactController@store')->name('contact.store');
-Route::get('/map', 'MapController@index')->name('map');
-
