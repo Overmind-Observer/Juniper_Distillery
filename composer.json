@@ -13,7 +13,6 @@
         "laravelcollective/html": "^5.4.0",
         "unisharp/laravel-ckeditor": "^4.7"
     },
-    },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",

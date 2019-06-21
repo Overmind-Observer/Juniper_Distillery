@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adminapp')
 @section('content')
 
     <h3>Create Product here...</h3>

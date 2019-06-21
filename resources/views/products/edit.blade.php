@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adminapp')
 @section('content')
     <h1>Edit Product</h1>
     {!! Form::open(['action' => ['ProductController@update',$product ->id] , 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
@@ -47,7 +47,7 @@
     <div class="form-group">
             {{Form::label('InActive','Active Status:')}}&nbsp;&nbsp;
 
-            @if ($product->Flag =='1')
+            @if ($product->InActive =='1')
                 {{Form::radio('InActive','1',true,['checked' =>'checked'])}} Active
                 &nbsp;
                 {{Form::radio('InActive','0',false,[])}} InActive

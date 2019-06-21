@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+@if(auth()->user()->isAdmin == 1)
+    {{-- <div class="panel-body"> <a href="{{url('admin/routes')}}">Admin</a> </div> --}}
+    {{-- <script>window.location.href = "{{url('admin/routes')}}";</script> --}}
+    <?php header("Location: ".url("admin/routes").""); /* Redirect browser */
+exit();?>
+@else 
+<div class="panel-heading">Normal User</div>
+                    
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -15,6 +23,7 @@
                     @endif
                     <div ><a href="/posts/create" class="btn btn-primary">Create Post</a></div>
                     <br>
+                    
                     <div><h3>Your experience with flavored Jinn Liqueur range...</h3></div>
                         @if (count($posts) > 0)
                             <table width ="600">
@@ -43,4 +52,5 @@
         </div>
     </div>
 </div>
+@endif
 @endsection

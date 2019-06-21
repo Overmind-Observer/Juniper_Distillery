@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adminapp')
 @section('content')
     <a href="/products" class="btn btn-default">Go Back</a>
     <h1>{{$product ->title}}</h1>

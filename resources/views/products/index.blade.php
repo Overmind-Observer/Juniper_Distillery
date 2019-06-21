@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adminapp')
 @section('content')
     <h1>Products Details</h1>
     <hr style="border-top: 1px dashed black;">

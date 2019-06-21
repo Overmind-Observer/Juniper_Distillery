@@ -36,7 +36,7 @@
         
                                                 <p>Fruit Flavored Jinn Liqueur</p>
         
-                                                    <p>Raspberry, Strawberry and......
+                                                    <p>Raspberry, Strawberry and...
         </p>
         <br>
         <img style="width:35%" src="../images/pic.jpg">
