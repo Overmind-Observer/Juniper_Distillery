@@ -19,10 +19,11 @@
                                             <li><a href="/shop">Spirits</a></li> 
                                         </ul>
                                     </li> 
-                                    <li class="dropdown"><a href="#">Product Recipes<i class="fa fa-angle-down"></i></a>
+                                    <li class="dropdown"><a href="#">Cocktail Recipes<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
-                                            <li><a href="/home">Recipes</a></li>
-                                            <li><a href="/home">How to make</a></li>
+                                            <li class="dropdown"><a href="#">Spirits</a><i class="fa fa-angle-down"></i></li>
+
+                                            <li class="dropdown"><a href="#">Liqeuer</a><i class="fa fa-angle-down"></i></li>
                                         </ul>
                                     </li> 
                                     <li class="dropdown"><a href="#">New Arrivals<i class="fa fa-angle-down"></i></a>
@@ -31,17 +32,14 @@
                                             <li><a href="/home">Tasting Tips</a></li>
                                         </ul>
                                     </li> 
-                                    <li class="dropdown"><a href="#">Cutomer Experiences<i class="fa fa-angle-down"></i></a>
-                                        <ul role="menu" class="sub-menu">
-                                            <li><a href="/posts">Tasting Experiences</a></li>
-                                        </ul>
-                                    </li> 
                                     <li class="dropdown"><a href="#">Company<i class="fa fa-angle-down"></i></a>
                                         <ul role="menu" class="sub-menu">
                                             <li><a href="/about">History</a></li>
-                                            <li><a href="/service">Our News</a></li>
-                                            <li><a href="/contact">Contact Us</a></li>
+                                            <li><a href="/news">Our News</a></li>
+                                            <li><a href="/contacts">Contacts</a></li>
                                           </ul>
+                                    </li> 
+                                    <li><a href="/contact">Contact Us<i></i></a>
                                     </li> 
                                 </ul>
                             </div>

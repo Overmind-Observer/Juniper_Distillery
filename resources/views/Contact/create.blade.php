@@ -1,15 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Our Location ...</h1>
-        <div style="width: 800px; height: 500px;">
-        <!-- This is the place to display the map -->
-            {!! Mapper::render() !!}
-        </div>
-        <br>
-        <h1>Send Your Inquries here ...</h1>
 
-    
+        <h1>Send your inquries here please</h1>
                <div class="col-md-8 col-sm-12">
 {!! Form::open(['action'=> 'ContactController@store', 'method'=>'POST', 'enctype' => 'multipart/form-data','route' => 'contact.store']) !!}
 
